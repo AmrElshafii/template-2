@@ -91,8 +91,12 @@ div.home div.rec {
     left: 0%;
     width: 50%;
     height: 40%;
+<<<<<<< HEAD
     justify-content: flex-end;
     align-items: center;
+=======
+    justify-content: flex-end
+>>>>>>> d68acba7799b1108a1a5f24a14a26bc7b6f973a2
 }
 
 div.home div.rec div.content {
@@ -110,6 +114,7 @@ div.home div.rec div.content p {
     width: 70%;
     line-height: 25px;
 }
+<<<<<<< HEAD
 
 div.home header nav ul {
     list-style: none;
@@ -152,3 +157,5 @@ div.home header nav > i {
         margin: auto;
     }
 }
+=======
+>>>>>>> d68acba7799b1108a1a5f24a14a26bc7b6f973a2
