@@ -6,6 +6,9 @@ body {
 :root {
     --main-aqua: #277e98;
     --main-gray: #353235;
+    --secondary-white: #eaeaea;
+    --main-text: #b0acae;
+    --main-heading: #1f2021;
 }
 
 a {
@@ -13,23 +16,13 @@ a {
     text-decoration: none;
     color: white;
     transition-property: font-size;
-    transition-duration: .20s;
+    transition-duration: .2s;
     position: relative;
 }
 
-a:hover {
+ul li a:hover {
     color: var(--main-aqua, aqua);
     font-size: large;
-}
-
-a:hover:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    background-color: #277e98;
-    bottom: -135%;
-    left: 0px;
 }
 
 /* starting the home section */
@@ -90,13 +83,10 @@ div.home div.rec {
     top: 30%;
     left: 0%;
     width: 50%;
-    height: 40%;
-<<<<<<< HEAD
+    min-height: 40%;
     justify-content: flex-end;
     align-items: center;
-=======
-    justify-content: flex-end
->>>>>>> d68acba7799b1108a1a5f24a14a26bc7b6f973a2
+    justify-content: flex-end;
 }
 
 div.home div.rec div.content {
@@ -114,11 +104,14 @@ div.home div.rec div.content p {
     width: 70%;
     line-height: 25px;
 }
-<<<<<<< HEAD
 
 div.home header nav ul {
     list-style: none;
     display: flex;
+}
+
+div.home header nav ul li {
+    margin: 0px 20px;
 }
 
 div.home header nav > i {
@@ -143,8 +136,53 @@ div.home header nav > i {
         display: inline-block;
         margin: 10px;
     }
-    div.home header nav i:hover ~ ul {
+    div.home header nav i:hover + ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: var(--main-aqua);
+        color: var(--main-gray);
+        top: 40px;
+        right: 50px;
+        padding: 20px;
+        line-height: 30px;
+        z-index: 1;
+    }
+    div.home header nav ul::after {
+        content: "";
+        border: transparent solid 15px;
+        border-bottom: var(--main-aqua) solid 15px;
+        position: absolute;
+        top: -30px;
+        right: -1.5px;
+    }
+    div.home header nav ul:hover {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: var(--main-aqua);
+        color: var(--main-gray);
+        top: 40px;
+        right: 50px;
+        padding: 20px;
+        line-height: 30px;
+        z-index: 1;
+    }
+    ul li a {
+        transition-property: transform;
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+    }
+    ul li a:hover {
         display: inline-block;
+        color: white;
+        font-size: unset;
+        position: relative;
+        transform: translatex(20px);
+        -webkit-transform: translatex(20px);
+        -moz-transform: translatex(20px);
+        -ms-transform: translatex(20px);
+        -o-transform: translatex(20px);
     }
 }
 
@@ -157,5 +195,56 @@ div.home header nav > i {
         margin: auto;
     }
 }
-=======
->>>>>>> d68acba7799b1108a1a5f24a14a26bc7b6f973a2
+
+/* start services */
+
+div.services div.container-2 {
+    width: 70%;
+    margin: auto;
+    background-color: var(--secondary-white);
+    display: grid;
+}
+
+p.heading {
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: var(--main-heading);
+    margin: 60px 0px 30px;
+}
+
+div.services div.container-2 div.line {
+    width: 100px;
+    height: 1px;
+    background-color: var(--main-heading);
+    justify-self: center;
+    position: relative;
+}
+
+div.services div.container-2 div.line::after {
+    content: "";
+    position: absolute;
+    border: #1f2021 solid 2px;
+    border-radius: 50%;
+    border-color: var(--main-heading);
+    width: 10px;
+    height: 10px;
+    left: 50px;
+    top: -6px;
+    translate: -50%  -5%;
+    background-color: var(--secondary-white);
+}
+
+div.services div.container-2 div.squares {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+div.services div.container-2 div.squares div.square {
+}
+
+div.services div.container-2 div.squares div.square .icon {
+    font-size: 30px;
+    text-indent: -40px;
+}
