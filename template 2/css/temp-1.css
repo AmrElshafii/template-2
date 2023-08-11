@@ -253,16 +253,11 @@ div.services div.container-2 div.line::after {
 
 div.services div.container-2 div.squares {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-}
-
-div.services div.container-2 div.squares {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     margin: 20px auto;
-    /* padding: 10% 25%; */
-    gap: 40px;
+    row-gap: 100px;
+    column-gap: 85px;
 }
-
-/* div.services div.container-2 div.squares {} */
 
 div.services div.container-2 div.squares div.square .icon {
     font-size: 30px;
@@ -281,4 +276,3 @@ div.services div.container-2 div.squares div.square p.text {
     color: var(--main-gray);
     margin: 30px 15px 0px 15px;
 }
-
