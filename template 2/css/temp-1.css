@@ -3,9 +3,9 @@ body {
     margin: 0px;
 }
 
-html,body {
+/* html,body {
     overflow-x: auto;
-}
+} */
 
 :root {
     --main-aqua: #277e98;
@@ -213,12 +213,12 @@ div.services {
     background-color: var(--secondary-white);
     min-height: 100vh;
 }
-
 div.services div.container-2 {
-    width: 70%;
+    width: 60%;
     margin: auto;
     background-color: var(--secondary-white);
     display: grid;
+    justify-content: center;
 }
 
 p.heading {
@@ -256,7 +256,7 @@ div.services div.container-2 div.squares {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     margin: 20px auto;
-    row-gap: 100px;
+    row-gap: 40px;
     column-gap: 85px;
 }
 
@@ -279,14 +279,22 @@ div.services div.container-2 div.squares div.square p.text {
 }
 
 @media (max-width: 998px) {
-    div.services div.container-2 div.squares {
-        row-gap: 20px;
-    }
     p.heading {
         margin: 30px;
     }
     div.services div.container-2 div.squares div.square span.head {
         margin: -25px 15px -10px 15px;
+        display: block;
+    }
+    div.services div.container-2 div.squares div.square .icon {
+        text-indent: 9px;
+        margin: 10px auto 40px ;
+    }
+    div.services div.container-2 div.squares div.square {
+        text-align: center;
+    }
+    div.services div.container-2 div.squares {
+        margin: 40px 0px;
     }
 }
 
@@ -355,14 +363,15 @@ div.design-1 div.rec-2 h2 {
     }
 }
 
+/* start portfolio */
 div.portfolio {
     background-color: var(--secondary-white);
     display: grid;
 }
 
-div.portfolio span.centered-text {
+span.centered-text {
     display: block;
-    width: 70%;
+    width: 60%;
     margin: auto;
     text-align: center;
     color: var(--main-text);
@@ -375,9 +384,146 @@ div.portfolio div.categories {
 }
 
 div.portfolio div.categories span.cat {
-    background-color: var(-);
     text-transform: uppercase;
     font-weight: 600;
     font-size: 15px;
-    margin: 0px 2%;
+    margin: 0px .5% -.5%;
+    padding: 10px;
+}
+
+div.portfolio div.categories span.cat:hover {
+    background-color: aqua;
+    cursor: pointer;
+    color: white;
+}
+
+div.portfolio div.img-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+div.portfolio div.img-container div.photo img {
+    width: 100%;
+    height: 200px;
+}
+
+div.portfolio div.img-container div.photo {
+    display: grid;
+    min-width: 25%;
+    min-height: 25%;
+    color: var(--main-gray);
+    text-transform: capitalize;
+    text-indent: 10px;
+}
+
+button.button {
+    background-color: aqua;
+    border: transparent solid 0px;
+    margin: 20px auto;
+    padding: 5px 20px;
+    color: white;
+}
+
+.video-container {
+    width: 100%;
+    background-color: var(--main-gray);
+    min-height: 30vh;
+    max-height: 70vh;
+} 
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    max-height: 70vh;
+}
+
+@media (max-width: 772px) {
+    span.centered-text {
+        width: 80%;
+    }
+}
+
+/* start about */
+div.about {
+    background-color: var(--secondary-white);
+    display: grid;
+    position: relative;
+}
+
+div.about img {
+    width: 60%;
+    margin: -70px auto 0px auto;
+}
+
+/* start projects */
+div.projects {
+    background-color: var(--main-heading);
+}
+
+div.projects div.proj-cont {
+    width: 70%;
+    margin: auto;
+    background-color: var(--main-gray);
+    display: grid;
+    padding: 5% 0px;
+    position: relative;
+    min-height: 30vh;
+}
+
+div.projects div.proj-cont div.rec-3 {
+    background-color: var(--main-backcolor);
+    display: block;
+    position: relative;
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+div.projects div.proj-cont div.rec-3 .projects-num {
+    display: grid;
+    text-align: center;
+    flex-grow: 1;
+}
+
+div.projects div.proj-cont div.rec-3 .projects-num span.number {
+    font-size: 45px;
+    color: white;
+}
+
+div.projects div.proj-cont div.rec-3 .projects-num span:not(span.number) {
+    color: white;
+    font-weight: 300;
+    margin: 20px;
+}
+
+div.projects div.proj-cont .grid {
+    display: grid;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    grid-auto-flow: column;
+    margin: 0px 20px;
+    grid-template-columns: repeat(4, 20%);
+    gap: 20px;
+}
+
+div.projects div.proj-cont .grid .grid-1 {
+    background-color: #454749;
+}
+
+div.projects div.proj-cont .grid .grid-2 {
+    background-color: #1f2021;
+}
+
+div.projects div.proj-cont .grid .grid-3 {
+    background-color: #454749;
+}
+
+div.projects div.proj-cont .grid .grid-4 {
+    background-color: #1f2021;
 }
