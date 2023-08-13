@@ -453,7 +453,7 @@ div.about {
 
 div.about img {
     width: 60%;
-    margin: -70px auto 0px auto;
+    margin: -130px auto 0px auto;
 }
 
 /* start projects */
@@ -526,4 +526,31 @@ div.projects div.proj-cont .grid .grid-3 {
 
 div.projects div.proj-cont .grid .grid-4 {
     background-color: #1f2021;
+}
+
+/* start stats */
+div.stats {
+    display: flex;
+    background-color: var(--secondary-white);
+    padding: 30px 0px 20px 0px;
+}
+
+div.stats div.testimonials {
+    display: grid;
+    justify-items: center;
+}
+
+div.stats div.skills {
+    display: grid;
+    justify-items: center;
+}
+
+p.title {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: var(--main-gray, gray);
+}
+
+div.stats div.testimonials .comment {
+    
 }
