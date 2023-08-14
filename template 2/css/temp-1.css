@@ -399,7 +399,7 @@ div.portfolio div.categories span.cat:hover {
 
 div.portfolio div.img-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     gap: 10px;
 }
 
@@ -745,6 +745,7 @@ div.quote div.quote-con p {
     margin: 30px 0px 0px;
 }
 
+/* start subscription */
 div.pricing {
     display: grid;
     justify-items: center;
@@ -756,12 +757,12 @@ div.pricing .subs {
     margin: 40px 0px;
 }
 
-div.pricing .subs .basic-cont {
+div.pricing .subs .type-con {
     display: grid;
     justify-items: center;
 }
 
-div.pricing .subs .basic {
+div.pricing .subs .type {
     border-top: aqua solid 1px;
     border-bottom: aqua solid 1px;
     padding: 10px 30px 30px;
@@ -783,13 +784,18 @@ div.pricing .subs button:hover {
     color: white;
 }
 
+div.pricing .subs .first {
+    margin: 20px 0px -30px;
+}
+
 div.pricing .subs .pricing {
     font-size: 50px;
-    margin: 20px;
+    padding-bottom: 40px;
     position: relative;
     border-bottom: aqua solid 1px;
-    width: calc(100% + 30px);
+    width: calc(100% + 50px);
     text-align: center;
+    margin-bottom: 10px;
 }
 
 div.pricing .subs .pricing::before {
@@ -803,12 +809,26 @@ div.pricing .subs .pricing::after {
     content: "/MO";
     font-size: 20px;
     position: absolute;
-    right: -20px;
+    right: -5px;
     bottom: 10px;
+}
+
+div.pricing .subs .features-ls {
+    padding: 20px;
+    border-bottom: aqua solid 1px;
+}
+
+div.pricing .subs .features-ls:last-child {
+    padding-bottom: 0px;
+    border-bottom: aqua solid 0px;
 }
 
 @media (max-width: 772px) {
     div.pricing .subs {
+        width: 100%;
         display: grid;
+        column-gap: 0px;
+        row-gap: 50px;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
 }
