@@ -5,6 +5,7 @@ body {
 
 html {
     width: fit-content;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -993,7 +994,7 @@ div.contact-us div.contact-cont form .one .text p:last-of-type {
 
 div.contact-us div.contact-cont form input,
 div.contact-us div.contact-cont form textarea {
-    border: var(--main-gray) solid 1px;
+    border: rgb(230, 230, 230) solid 1px;
     padding: 10px 10px;
     color: var(--main-gray, gray);
     min-width: 350px;
@@ -1002,7 +1003,7 @@ div.contact-us div.contact-cont form textarea {
 }
 
 div.contact-us div.contact-cont form textarea {
-    width: 100%;
+    width: 85%;
     margin: 0px 10px 0px 0px;
 }
 
@@ -1012,8 +1013,9 @@ div.contact-us div.contact-cont form .two {
     justify-content: space-between;
 }
 
-div.contact-us div.contact-cont form .two .text {
+div.contact-us div.contact-cont form .text {
     display: grid;
+    width: 15%;
 }
 
 @media (max-width: 772px) {
@@ -1057,6 +1059,10 @@ div.contact-us div.contact-cont form .two .text {
     }
     div.contact-us div.contact-cont form .one .input-1 {
         justify-content: center;
+    }
+    div.contact-us div.contact-cont form .text {
+        width: 100%;
+        justify-items: center;
     }
 }
 
