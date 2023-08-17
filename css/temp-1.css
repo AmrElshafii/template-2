@@ -1087,10 +1087,14 @@ footer img {
     margin: 0px 0px 30px 0px;
 }
 
+footer span {
+    display: block;
+    width: 100%;
+}
+
 footer p span {
     color: var(--main-aqua);
     font-weight: bold;
-    width: 100%;
 }
 
 footer a i {
