@@ -1102,7 +1102,7 @@ footer a i:hover {
 
 @media (max-width: 772px) {
     footer span {
-        width: 100%;
+        width: 150px;
     }
     footer p {
         width: 100%;
