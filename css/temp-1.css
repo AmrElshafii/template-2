@@ -1072,7 +1072,6 @@ footer {
     background-color: var(--main-gray, gray);
     padding: 40px 0px;
     color: white;
-    text-align: center;
 }
 
 footer span.line {
@@ -1098,4 +1097,13 @@ footer a i {
 
 footer a i:hover {
     color: var(--main-aqua, aqua);
+}
+
+@media (max-width: 772px) {
+    footer span {
+        width: 100%;
+    }
+    footer p {
+        width: 100%;
+    }
 }
