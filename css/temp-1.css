@@ -1089,7 +1089,6 @@ footer img {
 footer p span {
     color: var(--main-aqua);
     font-weight: bold;
-    display: block;
 }
 
 footer a i {
@@ -1102,7 +1101,7 @@ footer a i:hover {
 
 @media (max-width: 772px) {
     footer span {
-        width: 250px;
+        width: 100%;
     }
     footer p {
         width: 100%;
